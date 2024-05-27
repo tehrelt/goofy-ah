@@ -9,9 +9,7 @@ import (
 	"strings"
 )
 
-var (
-	filePath string
-)
+var filePath string
 
 func init() {
 	flag.StringVar(&filePath, "file", "", "reading from file")
@@ -44,7 +42,6 @@ func main() {
 			if len(line) == 1 {
 				if byte(line[0]) == 4 {
 					break
-					
 				}
 			}
 			lines = append(lines, line)
